@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7CEAF219-65FC-4317-88CC-E18E917D27EF}</ProjectGuid>
+    <ProjectGuid>{74A315E7-3698-49EB-A475-3D483BEFD683}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>COMP123_S2019_Lesson13C_Part1</RootNamespace>
-    <AssemblyName>COMP123-S2019-Lesson13C-Part1</AssemblyName>
+    <RootNamespace>COMP123_S2019_Lesson13C_Part2</RootNamespace>
+    <AssemblyName>COMP123-S2019-Lesson13C-Part2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,20 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentForm.Designer.cs">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\MasterForm.cs">
+    <Compile Include="Views\DocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MasterForm.Designer.cs">
-      <DependentUpon>MasterForm.cs</DependentUpon>
+    <Compile Include="Views\DocumentForm.Designer.cs">
+      <DependentUpon>DocumentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\StartForm.cs">
+    <Compile Include="Views\MDIParent1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\StartForm.Designer.cs">
-      <DependentUpon>StartForm.cs</DependentUpon>
+    <Compile Include="Views\MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ParentForm.resx">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -69,11 +78,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\MasterForm.resx">
-      <DependentUpon>MasterForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\DocumentForm.resx">
+      <DependentUpon>DocumentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\StartForm.resx">
-      <DependentUpon>StartForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

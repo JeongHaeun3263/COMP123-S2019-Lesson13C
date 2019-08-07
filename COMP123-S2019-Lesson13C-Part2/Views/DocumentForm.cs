@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace COMP123_S2019_Lesson13C_Part1
+namespace COMP123_S2019_Lesson13C_Part2.Views
 {
-    public partial class Form1 : Form
+    public partial class DocumentForm : Form
     {
-        public Form1()
+        public DocumentForm()
         {
             InitializeComponent();
         }
